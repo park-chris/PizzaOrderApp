@@ -7,6 +7,14 @@ import com.neppplus.pizzaorderapp_20211010.fragments.MyProfileFragment
 import com.neppplus.pizzaorderapp_20211010.fragments.PizzaStoreListFragment
 
 class MainViewPagerAdapter(fm : FragmentManager) : FragmentPagerAdapter(fm) {
+
+    override fun getPageTitle(position: Int): CharSequence? {
+        return when(position) {
+            0 -> "피자 주문"
+            else -> "내 정보 설정"
+        }
+    }
+
     override fun getCount(): Int {
         return 2
     }
