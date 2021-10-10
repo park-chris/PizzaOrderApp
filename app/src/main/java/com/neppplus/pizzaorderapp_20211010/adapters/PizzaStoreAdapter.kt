@@ -36,6 +36,8 @@ class PizzaStoreAdapter(
 
         storeNameTxt.text = data.name
 
+//        Glide.with(mContext).load(data.logoURL).into(logoImg)
+
         Glide.with(mContext).load(data.logoURL).into(logoImg)
 
         return row
